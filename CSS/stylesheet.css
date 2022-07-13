@@ -1,0 +1,103 @@
+
+.main {
+    display: grid;
+    grid-template-areas: 
+    "header1"
+    "header2"
+    "bookingLink"
+    "view"
+    "deleteAll"
+    "aList"
+    "footer";
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-blend-mode:lighten;}
+#header1 {grid-area: header1;} 
+#header2 {grid-area: header2;
+    font-size: 300%;
+    color: white;
+    text-shadow: 0 5px 5px black;
+margin-left: auto;
+margin-right: auto;
+text-align: center;} 
+#footer {grid-area: footer;} 
+#nav {grid-area: nav;} 
+#aList {grid-area: aList;
+    font-size: 300%;
+    text-shadow: -1px 0 #007575, 0 1px #007575, 1px 0 #007575, 0 -1px #007575;
+    text-shadow: 0 0px 2px #007575;}
+#bookingLink {grid-area: bookingLink;} 
+#view {grid-area: view;} 
+#deleteAll {grid-area: deleteAll;} 
+.center {margin: 5% auto 0 auto;}
+.homeBut {margin: 50px 120px;
+        height: 300px;
+    font-size: 350%;
+background-color: #007575;
+color: white;}
+h2 {font-size: 500%; color: white;
+    text-decoration: #007575;
+    text-shadow: 0 5px 5px black;
+text-align: center;}
+h4 {font-size: 200%; 
+    margin:auto;
+    text-decoration: #007575;}
+.booking {
+    display: grid;
+    grid-template-areas: 
+    "header1 header1 header1"
+    "aForm aForm aForm"
+    "back back back"
+    "footer footer footer";
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-blend-mode:lighten;}
+#aForm {grid-area: aForm;
+        margin: 20px 50px;
+        font-size: 300%;
+        display: grid;
+        grid-template-areas: 
+            "lDate aDate"
+            "lTime aTime"
+            "lOhip ohip"
+            "lEmail email"
+            "lPhone phone"
+            "submit submit";
+        color: white;
+        text-decoration: #007575;}
+input {margin: 5px;
+        font-size: 100%;
+        border-radius: 25px;
+        border: solid black;
+    }
+#aDate {grid-area: aDate;}
+#aTime {grid-area: aTime;}
+#ohip {grid-area: ohip;}
+#email {grid-area: email;}
+#phone {grid-area: phone;}
+#back {grid-area: back;
+    height: 200px;}
+#lDate {grid-area: lDate;}
+#lTime {grid-area: lTime;}
+#lOhip {grid-area: lOhip;}
+#lEmail {grid-area: lEmail;}
+#lPhone {grid-area: lPhone;}
+#submit {grid-area: submit;
+    margin-top: 40px;
+        height: 200px;
+        font-size: 250%;
+        background-color: #007575}
+#back{margin: auto;
+        margin-top: -10%;
+        width: 90%;
+        font-size: 500%;
+        background-color: #007575}
+code {font-size: 300%;
+    text-shadow: 0 0px 2px black;}
+button {border-radius: 25px;
+    border: solid black;
+    text-shadow: 0 0px 2px black;
+    box-shadow: 5px 5px 15px black;}
+#cDelete {font-size: 15px;}
+label {text-shadow: -1px 0 #007575, 0 1px #007575, 1px 0 #007575, 0 -1px #007575;
+    text-shadow: 0 5px 5px black;}

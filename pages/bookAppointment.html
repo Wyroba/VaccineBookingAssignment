@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Appointment Booking</title>
+        <meta name="author" content="Peter Wyroba">
+        <meta name="description" content="This page contains the Appointment Booking 
+        Page for Assignment #1 for course SYST24444">
+        <script type="text/javascript" src="../js/jquery.js"></script>
+        <script type="text/javascript" src="../js/myJs.js"></script>
+        <link rel="stylesheet" href="../CSS/stylesheet.css">
+        <meta name="viewport" content="width=device-width, initial-scale=0.38">
+    </head>
+    <body class="booking">
+        <header class="center" id="header1">
+            <h2 class="center" >Appointment Booking</h2>
+        </header>
+        <form id="aForm" onsubmit="makeAppointment()" method="post">
+            <label id="lDate" for="aDate">Appointment Date: </label>
+            <input id="aDate" name="aDate" type="date" required></input><br>
+            <label id="lTime" for="aTime">Appointment Time: </label>
+            <input id="aTime" name="aTime" type="time" required></input><br>
+            <label id="lOhip" for="ohip">OHIP #: </label>
+            <input id="ohip" name="ohip" type="tel" maxlength="10" required></input><br>
+            <label id="lEmail" for="email">Email: </label>
+            <input id="email" name="email" type="email"></input><br>
+            <label id="lPhone" for="phone">Phone #: </label>
+            <input id="phone" name="phone" type="tel" maxlength="10"></input><br>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+        <button class="center" id="back" onclick="window.location='../index.html'">Back</button>
+        <footer class="center" id="footer">
+            <code >&copy wyrobap / Davis Campus</code>
+        </footer>
+    </body>
+</html>
